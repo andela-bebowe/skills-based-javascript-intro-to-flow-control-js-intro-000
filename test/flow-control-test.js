@@ -80,6 +80,9 @@ describe('flow-control', () => {
   })
 
   describe('ternaryTeenager', () => {
+    function ternaryTeenager(age) {
+      age <= 12 ? return "You are a kid" : age <= 19 ? return "You are a teenager" : return "You are not a teenager"
+    }
     it('should return "You are a teenager" if age is between 13-19', () => {
       expect(ternaryTeenager(15)).toEqual("You are a teenager")
     })
