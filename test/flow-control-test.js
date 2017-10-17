@@ -2,6 +2,7 @@ const expect = require('expect')
 const fs = require('fs')
 const jsdom = require('jsdom')
 const path = require('path')
+
 function basicTeenager(age) {
   if (age >= 13 && age <= 19) {
     return "You are a teenager!"
@@ -39,6 +40,7 @@ function switchAge(age) {
       return "You have an age"
   }
 }
+
 
 describe('flow-control', () => {
 
