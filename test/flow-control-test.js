@@ -22,11 +22,6 @@ describe('flow-control', () => {
   })
 
   describe('basicTeenager', () => {
-    function basicTeenager(age) {
-      if (age >= 13 && age <= 19) {
-        return "You are a teenager!"
-      }
-    }
     it('should return "You are a teenager!" if the age is between 13-19', () => {
       expect(basicTeenager(13)).toEqual("You are a teenager!");
     })
@@ -38,13 +33,6 @@ describe('flow-control', () => {
   })
 
   describe('teenager', () => {
-    function teenager(age) {
-      if (age >= 13 && age <= 19) {
-        return "You are a teenager!"
-      }
-
-      return "You are not a teenager"
-    }
     it('should return "You are a teenager!" if the age is between 13-19', () => {
       expect(teenager(13)).toEqual("You are a teenager!")
     })
@@ -56,16 +44,6 @@ describe('flow-control', () => {
   })
 
   describe('ageChecker', () => {
-    function ageChecker(age) {
-      if (age >= 13 && age <= 19) {
-        return "You are a teenager!"
-      } else if (age < 13){
-        return "You are a kid"
-      }
-
-      return "You are a grownup"
-    }
-
     it('should return "You are a teenager!" if the age is between 13-19', () => {
       expect(ageChecker(13)).toEqual("You are a teenager!")
     })
