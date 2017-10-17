@@ -93,15 +93,6 @@ describe('flow-control', () => {
   })
 
   describe('switchAge', () => {
-    function switchAge(age) {
-      switch (age) {
-        case age >= 13 && age <= 19:
-          return "You are a teenager!"
-          break;
-        default:
-          return "You have an age"
-      }
-    }
     it('should return "You are a teenager" if age is between 13-19', () => {
       expect(switchAge(15)).toEqual("You are a teenager")
     })
